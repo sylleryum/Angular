@@ -12,7 +12,8 @@ export class SpotifyService {
   currentUser!: User;
   signedin$ = new BehaviorSubject<any>(false)
 
-  private ROOT_URL = 'http://localhost:8080/api/v1'
+  // private ROOT_URL = 'http://localhost:8080/api/v1'
+  private ROOT_URL = 'https://spotify-helper-backend.herokuapp.com/api/v1'
   private AUTHENTICATION_URL = '/authentication-url'
   private GET_USER = '/me'
   private USER_PLAYLISTS = '/playlists'
